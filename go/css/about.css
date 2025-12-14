@@ -1,0 +1,88 @@
+.about {
+  margin-top: 51px;
+  margin-bottom: 96px;
+}
+
+.about-title {
+  margin-bottom: 45px;
+}
+
+.about-block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.about-txt {
+  margin-bottom: 57px;
+}
+
+.about-text1 {
+  width: 500px;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 29px;
+  line-height: 28px;
+}
+
+.about-text1:last-child {
+  margin-bottom: 0;
+}
+
+.about-quote {
+  width: 500px;
+  font-size: 44px;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 50px;
+  margin-bottom: 31px;
+}
+
+.about-quote__text-1 {
+  margin-left: -2px;
+}
+
+.about-quote__text-2 {
+  margin-left: 32px;
+  display: inline-block;
+}
+
+.about-quote__marks-1 {
+  margin-bottom: 22px;
+}
+
+.about-quote__marks-2 {
+  margin-bottom: 16px;
+}
+
+.about-quote-upp {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-quote__text-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about-quote__img {
+  margin-left: 66px;
+  margin-right: 30px;
+  border-radius: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 0px -9px;
+  width: 80px;
+  height: 80px;
+}
+
+.about-upp {
+  text-transform: uppercase;
+}
+
+.about-quote__text-3 {
+  font-size: 20px;
+  line-height: 28px;
+}

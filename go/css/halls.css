@@ -1,0 +1,54 @@
+.halls {
+  margin-bottom: 100px;
+}
+
+.halls-title {
+  margin-bottom: 44px;
+}
+
+.halls-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.halls-link {
+  display: block;
+  height: 349px;
+}
+
+.halls-item {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.halls-item:nth-child(1n) {
+  margin-right: 20px;
+}
+
+.halls-item:nth-child(2n) {
+  margin-right: 0px;
+}
+
+.halls-list > :nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
+.halls-img {
+  width: 580px;
+}
+
+.halls-text {
+  position: absolute;
+  top: 27%;
+  left: 28%;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  width: 252px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.halls-text__lf {
+  left: 29%;
+}

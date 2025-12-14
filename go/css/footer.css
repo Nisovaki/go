@@ -1,0 +1,144 @@
+.footer {
+  background: linear-gradient(180deg, #1b1a1b 0%, #370a37 100%);
+  padding-bottom: 8px;
+}
+
+.footer-title {
+  margin-bottom: 46px;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 151px;
+}
+
+.footer-block {
+  display: flex;
+  align-items: center;
+}
+
+.footer-address {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.footer-txt,
+.footer-telefone,
+.footer-eml {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-icon {
+  width: 35px;
+  height: 32px;
+  margin-right: 26px;
+  margin-left: -1px;
+}
+
+.footer-tel {
+  margin-bottom: 10px;
+}
+
+.footer-email {
+  margin-bottom: 34px;
+}
+
+:root {
+  --soc-bg: #ffffff; /* default круг */
+  --soc-icon: #bdbdbd; /* default иконка */
+
+  --soc-bg-hover: #eee6f2; /* hover круг */
+
+  --soc-bg-active: #b100ff; /* active круг */
+  --soc-icon-active: #7a00c9; /* active иконка */
+
+  --soc-focus: #b100ff; /* рамка focus */
+}
+
+.footer-list {
+  display: flex;
+  gap: 16px;
+}
+
+.social {
+  width: 50px;
+  height: 50px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: 50%;
+  position: relative;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.social__icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+}
+
+/* hover */
+.social:hover {
+  background: transparent;
+  color: #eadeed;
+}
+
+/* active */
+.social:active {
+  background: transparent;
+  color: #cd06ff;
+}
+
+/* focus */
+.social:focus {
+  outline: 1px solid #CD06FF;
+  border-radius: 0%;
+  background: transparent;
+  color: #eadeed;
+}
+
+.social:focus-visible {
+  background: transparent;
+  color: #eadeed;
+}
+/* 
+.social:focus-visible::after {
+  content: "";
+  position: absolute;
+} */
+
+.footer-map__witdh {
+  width: 680px;
+  height: 274px;
+}
+
+.footer-wrapper2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper2__txt {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 4px;
+}
+
+.footer-wrapper2__text2 {
+  text-align: center;
+}
+
+.footer-wrapper2__text3 {
+  text-align: right;
+}
+
+.footer-wrapper2__txt:last-child {
+  margin-bottom: 0;
+}

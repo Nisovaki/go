@@ -1,0 +1,372 @@
+.booking {
+  background-color: #440f51;
+  padding-top: 81px;
+  padding-bottom: 79px;
+}
+
+.booking-title {
+  margin-bottom: 46px;
+}
+
+.booking-subtitle {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.booking-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 61px;
+}
+
+.booking-button__text-pdg1 {
+  padding: 7px 45px;
+}
+
+.booking-button__text-pdg2 {
+  padding: 7px 37px;
+}
+
+.booking-button__text-pdg3 {
+  padding: 7px 39px;
+}
+
+.booking-button__text-pdg4 {
+  padding: 7px 29px;
+}
+
+.booking-button {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.booking-button input[type="radio"]{
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* default: белая, без рамки */
+.booking-button span{
+  background: #fff;
+  color: #000;
+  border-radius: 8px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  display: inline-block;
+  white-space: nowrap;
+
+  border: 2px solid transparent; /* чтобы не прыгала ширина/высота */
+  transition: background-color .15s ease,
+              border-color .15s ease,
+              color .15s ease,
+              transform .05s ease;
+}
+
+/* hover: белая + фиолетовая обводка */
+.booking-button input[type="radio"]:not(:checked) + span:hover{
+  background: #EADEED;
+  border-color: #640AA3; /* фиолетовая рамка как на макете */
+}
+
+/* focus: как hover (рамка), без свечения */
+.booking-button input[type="radio"]:focus-visible + span{
+  background: #fff;
+  border-color: #6a1bb1;
+  outline: none;
+}
+
+/* active: заливка фиолетовая (как выбранная) + лёгкое "нажатие" */
+.booking-button:active span{
+  transform: translateY(1px);
+}
+
+.booking-button input[type="radio"]:not(:checked) + span:active{
+  background: #6C0287;
+  border-color: #FFFFFF;
+  color: #fff;
+}
+
+/* checked: фиолетовая заливка */
+.booking-button input[type="radio"]:checked + span{
+  background: #fff;
+  border-color: #640AA3;
+  color: #606060;
+}
+
+/* optional: если хочешь, чтобы у выбранной при hover ничего не менялось */
+.booking-button input[type="radio"]:checked + span:hover{
+  background: #6a1bb1;
+  border-color: #6a1bb1;
+}
+
+.booking-block {
+  display: flex;
+  justify-content: space-between;
+  width: 959px;
+  margin: auto;
+  margin-bottom: 59px;
+}
+
+.booking-list1 {
+  margin-left: -10px;
+}
+
+.booking-list2 {
+  margin-left: -13px;
+}
+
+.booking-text__mb {
+  margin-top: 4px;
+}
+
+.booking-minor {
+  margin: 0;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.booking-radio {
+  width: 27px;
+  height: 27px;
+  margin-right: 12px;
+}
+
+.booking-check {
+  width: 25px;
+  height: 25px;
+  margin-right: 12px;
+}
+
+.booking-text {
+  font-size: 22px;
+  line-height: 100%;
+}
+
+.booking-item {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.booking-item:last-child {
+  margin-bottom: 0;
+}
+
+.booking-choice > .booking-subtitle {
+  margin-bottom: 18px;
+}
+
+.booking-choice {
+  border: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking-grid {
+  display: grid;
+  grid-template-columns: 332px 650px;
+  align-items: end;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .booking-grid {
+    grid-template-columns: 1fr;
+  }
+  .booking-date-time-quantity {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: space-between;
+  }
+  .custom-select-wrapper {
+    flex: 1 1 calc(50% - 7.5px);
+  }
+  .custom-select-full-width {
+    flex: 1 1 100%;
+  }
+}
+
+.booking-date-time-quantity {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-date-time-quantity2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.custom-select-wrapper {
+  position: relative;
+  width: 300px;
+}
+
+.custom-select-wrapper2 {
+  width: 135px;
+}
+
+.custom-select-wrapper3 {
+  margin-top: 22px;
+}
+
+.custom-select {
+  width: 100%;
+  padding: 10px 28px 10px 21px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  height: 52px;
+  box-sizing: border-box;
+}
+
+.custom-select option[value=""][disabled] {
+  color: #888888;
+}
+
+.custom-select-arrow {
+  position: absolute;
+  top: 53%;
+  right: 27px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #000000;
+  pointer-events: none;
+}
+
+.custom-select-wrapper3 > .custom-select-arrow {
+  top: 50%;
+}
+
+.booking-personal-info {
+  display: grid;
+  grid-template-columns: 280px 300px;
+  justify-content: space-between;
+}
+
+.booking-personal-info > .input-label {
+  letter-spacing: 0.7px;
+}
+
+@media (max-width: 768px) {
+  .booking-personal-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+.booking-information,
+.booking-findings {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.booking-information {
+  margin-left: 20px;
+}
+
+.booking-information > .booking-input {
+  width: 280px;
+}
+
+.booking-findings > .input-label {
+  letter-spacing: 0.5px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: -6px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.booking-input {
+  width: 300px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  height: 52px;
+  box-sizing: border-box;
+}
+
+.booking-submit-button {
+  background-color: #ffffff;
+  color: #4b0082;
+  border: none;
+  border-radius: 10px;
+  padding: 17px 30px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  width: fit-content;
+  align-self: end;
+  min-width: 300px;
+  text-transform: uppercase;
+  margin-right: 100px;
+  border: 3px solid transparent; /* чтобы не прыгала ширина/высота */
+  transition: background-color .15s ease,
+              border-color .15s ease,
+              color .15s ease,
+              transform .05s ease;
+}
+
+.booking-submit-button:hover {
+  background-color: #EADEED;
+  border: 3px solid #6C0287;
+}
+
+.booking-submit-button:active {
+  background-color: #EADEED;
+  border: 3px solid #EADEED;
+}
+
+.booking-submit-button:focus {
+  background-color: #fff;
+  border: 3px solid #6C0287;
+}

@@ -1,0 +1,69 @@
+.services {
+  margin-bottom: 95px;
+}
+
+.services > .container {
+  padding: 0;
+}
+
+.services-title {
+  width: 850px;
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+.services-title__ls {
+  margin-right: 8px;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-item {
+  position: relative;
+  margin: 19px 0px;
+}
+
+.services-text {
+  position: absolute;
+  left: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.services-text1 {
+  bottom: 36px;
+}
+
+.services-text2 {
+  bottom: 7px;
+  width: 52%;
+}
+
+.services-text3 {
+  bottom: 37px;
+}
+
+.services-text4 {
+  bottom: 39px;
+}
+
+.services-text5 {
+  bottom: 12px;
+}
+
+.services-text6 {
+  bottom: 39px;
+}
+
+
+.services-list > *:nth-last-child(4) ~ * {
+  margin-bottom: 0;
+}
